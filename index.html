@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/jquery.datetimepicker.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+    <title>OsteBot</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="container" id="steps">
+        <section class="step step1 active opacity" id="step1" data-step="step1">
+          <div class="section__box">
+            <img
+              src="/assets/images/oste_bot.png"
+              class="step__bot"
+              alt="osteo-bot"
+            />
+            <div class="step__content">
+              <div class="step__text-box step1__box">
+                <span id="typing"></span>
+              </div>
+              <div class="step1__btn-box">
+                <button class="step1__btn" id="men">Мужчина</button>
+                <button class="step1__btn" id="women">Женщина</button>
+              </div>
+              <button class="miss">
+                Пропустить диагностику. Записаться на приём
+              </button>
+              <button class="whois" id="whois">
+                Я хочу узнать больше о Данииле Дмитриевиче
+              </button>
+            </div>
+          </div>
+        </section>
+
+        <section class="step step2" id="step2__men" data-step="step2">
+          <div class="section__box">
+            <div class="step2__box men">
+              <div class="step__text-box step2__text-box">
+                <span id="typing2"></span>
+              </div>
+              <img
+                src="/assets/images/oste_bot.png"
+                class="step__bot step__bot_revers"
+                alt="osteo-bot"
+              />
+  
+              <div class="men__img-box">
+                <img class="men__img" src="/assets/images/men.png" alt="" />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__grud"
+                  data-item="Боль в груди"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__taz"
+                  data-item="Боль в тазу"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__golova"
+                  data-item="Боль в голове"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__plech"
+                  data-item="Боль в плечах"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__kist"
+                  data-item="Боль в кисте"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__visok"
+                  data-item="Боль в виске"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__chelust"
+                  data-item="Боль в челюсте"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__sheya"
+                  data-item="Боль в шее"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__poyas"
+                  data-item="Боль в пояснице"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__bruh"
+                  data-item="Боль в брюшой полости"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__kopch"
+                  data-item="Боль в копчике"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__koleno"
+                  data-item="Боль в колене"
+                />
+                <img
+                  src="/assets/images/pain.png"
+                  alt=""
+                  class="pain pain__men"
+                  id="pain__stup"
+                  data-item="Боль в ступнях"
+                />
+              </div>
+            </div>
+          </div>
+          <button class="miss_diagnos">
+            Пропустить диагностику. Записаться на приём
+          </button>
+          <a href="javascript:void(0);" class="back-btn reverse back1">
+            <img
+              src="/assets/images/back.png"
+              alt="Назад"
+              class="back-btn__img"
+            />
+          </a>
+        </section>
+
+        <section class="step step2" id="step2__women" data-step="step2">
+         <div class="section__box">
+          <div class="step2__box women">
+            <div class="step__text-box step2__text-box">
+              <span id="typing3"></span>
+            </div>
+            <img
+              src="/assets/images/oste_bot.png"
+              class="step__bot step__bot_revers"
+              alt="osteo-bot"
+            />
+          </div>
+            <div class="men__img-box" id="women__img-box">
+              <img class="men__img" src="/assets/images/women.png" alt="" />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__grud_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__taz_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__golova_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__plech_w"
+              />
+              <img
+              src="/assets/images/pain.png"
+              alt=""
+              class="pain pain__women"
+              id="pain__rodi_w"
+            />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__kist_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__visok_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__chelust_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__sheya_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__poyas_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__bruh_w"
+              />
+              <img
+              src="/assets/images/pain.png"
+              alt=""
+              class="pain pain__women"
+              id="pain__mens_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__kopch_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__koleno_w"
+              />
+              <img
+                src="/assets/images/pain.png"
+                alt=""
+                class="pain pain__women"
+                id="pain__stup_w"
+              />
+            </div>
+          <a href="javascript:void(0);" class="back-btn reverse back1">
+            <img
+              src="/assets/images/back.png"
+              alt="Назад"
+              class="back-btn__img"
+            />
+          </a>
+          <button class="miss_diagnos">
+            Пропустить диагностику. Записаться на приём
+          </button>
+         </div>
+        </section>
+
+        <section class="step step3" id="step3" data-step="step3">
+         <div class="section__box">
+          <img
+          src="/assets/images/oste_bot.png"
+          class="step__bot"
+          alt="osteo-bot"
+        />
+        <div class="step__content">
+          <div class="step__text-box step3__box">
+            <span id="typing4"></span>
+          </div>
+          <form action="" class="form">
+            <div class="form__box">
+              <input type="text" placeholder="Введи ваше имя" required />
+              <input
+                type="tel"
+                class="form__tel"
+                placeholder="Введите Ваш номер телефона"
+                required
+              />
+            </div>
+            <div class="form__box last">
+              <input
+                type="datetime-local"
+                id="meeting-time"
+                class="disactive"
+                required
+              />
+              <div class="date__field"></div>
+              <input type="hidden" id="select__info" required />
+              <input type="hidden" id="pain__about" />
+              <div class="select">
+                <span class="select__title">Выберите способ связи</span>
+                <div class="select__list">
+                  <span class="select__list-item">Telegram</span>
+                  <span class="select__list-item">WhatsUp</span>
+                  <span class="select__list-item">Телефон</span>
+                </div>
+              </div>
+            </div>
+            <div class="form__btn-box">
+              <input
+                class="form__submit"
+                type="submit"
+                value="Записаться на прием"
+              />
+              <a
+                href="javascript:void(0);"
+                class="questions__btn"
+                id="questions__btn"
+                >Я хочу узнать больше о Данииле Дмитриевиче</a
+              >
+            </div>
+          </form>
+        </div>
+         </div>
+         <a
+         href="javascript:void(0);"
+         class="back-btn back2"
+         data-step-prev=""
+       >
+         <img
+           src="/assets/images/back.png"
+           alt="Назад"
+           class="back-btn__img"
+         />
+       </a>
+        </section>
+
+        <section class="step step4" id="step4">
+          <div class="section__box">
+            <div class="step__content">
+              <div class="step__text-box step4__box">
+                <span
+                  class="question__info default__text active"
+                  id="typing5"
+                ></span>
+                <span class="question__info new__text" id="quest__pain-content"
+                  >Будет</span
+                >
+                <span class="question__info new__text" id="quest__cost-content"
+                  >Много</span
+                >
+                <span class="question__info new__text" id="quest__time-content"
+                  >Зависит от того, как сильно ты себя запустил</span
+                >
+                <span class="question__info new__text" id="quest__stop-content"
+                  >Нельзя приходить здоровым</span
+                >
+                <div class="question__info new__text" id="quest__who-content">
+                  Остеопат всех остеопатов
+                </div>
+                <div class="question__info new__text" id="quest__where-content">
+                  <p class="quest__where-text">
+                    Приём проходит по адрессу: г.Батуми, Грузия. Джавахашвили
+                    28/30
+                  </p>
+                  <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A2d3a29b2ce1f58efd630fb140ea719ce4d90bf3b0fc32d43a2547d640bed6bf9&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+                </div>
+  
+                <span class="question__info new__text" id="quest__prof-content"
+                  >Остеопат – специалист, который занимается восстановлением
+                  нормального функционирования организма, воздействуя на кости,
+                  мышцы, связки, суставы, а также органы, в которых определяется
+                  патология.</span
+                >
+                <span
+                  class="question__info new__text"
+                  id="quest__problems-content"
+                  >Остеопат лечит все - от выгорания пятой седалищной точки, до
+                  желания повесится</span
+                >
+              </div>
+
+              <img
+              src="/assets/images/oste_bot.png"
+              class="step__bot step__bot_revers"
+              alt="osteo-bot"
+            />
+              <div class="questions__box">
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__who"
+                  >Кто такой Даниил Андреев?</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__where"
+                  >Где проходит приём?</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__prof"
+                  >Кто такой Остеопат?</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__time"
+                  >Сколько длится сеанс остеопатии?</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__pain"
+                  >Будет ли больно?</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__cost"
+                  >Сколько стоит прием?</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__stop"
+                  >Есть ли какие-то противопоказания?</a
+                >
+                <a
+                  href="javascript:void(0);"
+                  class="question__item"
+                  id="quest__problems"
+                  >Какие проблемы лечит остеопат?</a
+                >
+              </div>
+            </div>
+          </div>
+          <a
+          href="javascript:void(0);"
+          class="back-btn reverse back3"
+          data-step-prev=""
+        >
+          <img
+            src="/assets/images/back.png"
+            alt="Назад"
+            class="back-btn__img"
+          />
+        </a>
+        </section>
+      </div>
+    </main>
+    <script src="/js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="../js/jquery.datetimepicker.js"></script>
+    <script src="../js/main.js"></script>
+  </body>
+</html>
