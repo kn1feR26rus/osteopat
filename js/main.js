@@ -1,26 +1,26 @@
 $(document).ready(function () {
-  $('body').on('input', '.form__tel', function(){
-    this.value = this.value.replace(/[^0-9]/g, '');
+  $("body").on("input", ".form__tel", function () {
+    this.value = this.value.replace(/[^0-9]/g, "");
   });
-  
+
   /* start first steps action */
   $("#men").click(function () {
-    if ($('.miss').hasClass('missing')) {
-      $('.miss').removeClass('missing');
+    if ($(".miss").hasClass("missing")) {
+      $(".miss").removeClass("missing");
     }
-    $('#step2__men').attr('data-active', 'true');
+    $("#step2__men").attr("data-active", "true");
     $(this).addClass("active");
-      $('#step1').removeClass('opacity');
-        setTimeout(function(){
-          $('#step1').removeClass('active');
-        }, 500);
-      setTimeout(function(){
-        $("#step2__men").addClass("active");
-        $(".step2__box.men").addClass("active");
-      }, 550);
-      setTimeout(function(){
-        $("#step2__men").addClass("opacity");
-      }, 650);
+    $("#step1").removeClass("opacity");
+    setTimeout(function () {
+      $("#step1").removeClass("active");
+    }, 500);
+    setTimeout(function () {
+      $("#step2__men").addClass("active");
+      $(".step2__box.men").addClass("active");
+    }, 550);
+    setTimeout(function () {
+      $("#step2__men").addClass("opacity");
+    }, 650);
 
     $(".step1__btn").prop("disabled", true);
     $("#typing2").typed({
@@ -30,39 +30,39 @@ $(document).ready(function () {
       contentType: "html",
     });
 
-    $('.back1').click(function() {
-      $('#step2__men').attr('data-active', 'false');
-      $('.step2').removeClass('opacity');
-      $('.step1__btn').attr('disabled', false);
-      $('.step1__btn').removeClass('active');
-      setTimeout(function(){
-        $('.step2').removeClass('active');
-        }, 500);
-      setTimeout(function(){
+    $(".back1").click(function () {
+      $("#step2__men").attr("data-active", "false");
+      $(".step2").removeClass("opacity");
+      $(".step1__btn").attr("disabled", false);
+      $(".step1__btn").removeClass("active");
+      setTimeout(function () {
+        $(".step2").removeClass("active");
+      }, 500);
+      setTimeout(function () {
         $(".step1").addClass("active");
         // $(".step2__box.men").addClass("active");
       }, 550);
-      setTimeout(function(){
+      setTimeout(function () {
         $(".step1").addClass("opacity");
       }, 650);
     });
   });
 
   $("#women").click(function () {
-    if ($('.miss').hasClass('missing')) {
-      $('.miss').removeClass('missing');
+    if ($(".miss").hasClass("missing")) {
+      $(".miss").removeClass("missing");
     }
-    $('#step2__women').attr('data-active', 'true');
+    $("#step2__women").attr("data-active", "true");
     $(this).addClass("active");
-      $('#step1').removeClass('opacity');
-    setTimeout(function(){
-      $('#step1').removeClass('active');
+    $("#step1").removeClass("opacity");
+    setTimeout(function () {
+      $("#step1").removeClass("active");
     }, 500);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step2__women").addClass("active");
       $(".step2__box.women").addClass("active");
     }, 550);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step2__women").addClass("opacity");
     }, 650);
 
@@ -74,19 +74,19 @@ $(document).ready(function () {
       contentType: "html",
     });
 
-    $('.back1').click(function() {
-      $('#step2__women').attr('data-active', 'false');
-      $('.step2').removeClass('opacity');
-      $('.step1__btn').attr('disabled', false);
-      $('.step1__btn').removeClass('active');
-      setTimeout(function(){
-        $('.step2').removeClass('active');
-        }, 500);
-      setTimeout(function(){
+    $(".back1").click(function () {
+      $("#step2__women").attr("data-active", "false");
+      $(".step2").removeClass("opacity");
+      $(".step1__btn").attr("disabled", false);
+      $(".step1__btn").removeClass("active");
+      setTimeout(function () {
+        $(".step2").removeClass("active");
+      }, 500);
+      setTimeout(function () {
         $(".step1").addClass("active");
         // $(".step2__box.men").addClass("active");
       }, 550);
-      setTimeout(function(){
+      setTimeout(function () {
         $(".step1").addClass("opacity");
       }, 650);
     });
@@ -102,24 +102,24 @@ $(document).ready(function () {
   });
   /* end first steps action */
 
-  $('#whois').click(function() {
-    $(this).addClass('checked');
-    $('#step1').removeClass('opacity');
-    setTimeout(function(){
-      $('#step1').removeClass('active');
+  $("#whois").click(function () {
+    $(this).addClass("checked");
+    $("#step1").removeClass("opacity");
+    setTimeout(function () {
+      $("#step1").removeClass("active");
     }, 1500);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step4").addClass("active");
       $(".step4__box").addClass("active");
     }, 550);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step4").addClass("opacity");
     }, 650);
 
-    $('.default__text').removeClass('active');
-    $('.default__text').hide()
-    $('#quest__who, #quest__who-content').addClass('active');
-    $('#quest__who-content').show();
+    $(".default__text").removeClass("active");
+    $(".default__text").hide();
+    $("#quest__who, #quest__who-content").addClass("active");
+    $("#quest__who-content").show();
 
     $(".question__item").click(function () {
       $(".question__item").removeClass("active");
@@ -130,18 +130,16 @@ $(document).ready(function () {
     });
   });
 
-
-
-  $('.miss_diagnos').click(function() {
-    $('.step2').removeClass('opacity');
-    setTimeout(function(){
-      $('.step2').removeClass('active');
+  $(".miss_diagnos").click(function () {
+    $(".step2").removeClass("opacity");
+    setTimeout(function () {
+      $(".step2").removeClass("active");
     }, 1500);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("active");
       $(".step3__box").addClass("active");
     }, 550);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("opacity");
     }, 650);
 
@@ -156,32 +154,31 @@ $(document).ready(function () {
       e.stopPropagation();
     });
 
-    
     $("#typing4").typed({
-      strings: ['Диагностика пропущена.<br><br>Запишитесь на прием в удобное для Вас время.'],
+      strings: [
+        "Диагностика пропущена.<br><br>Запишитесь на прием в удобное для Вас время.",
+      ],
       typeSpeed: -200,
       startDelay: 800,
       contentType: "html",
     });
 
     $("#questions__btn").click(function () {
-      $('#step3').removeClass('opacity');
-      setTimeout(function(){
-        $('#step3').removeClass('active');
+      $("#step3").removeClass("opacity");
+      setTimeout(function () {
+        $("#step3").removeClass("active");
       }, 1000);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("active");
       }, 450);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("opacity");
       }, 1000);
 
-      $('.default__text').removeClass('active');
-      $('.default__text').hide()
-      $('#quest__who, #quest__who-content').addClass('active');
-      $('#quest__who-content').show();
-
-
+      $(".default__text").removeClass("active");
+      $(".default__text").hide();
+      $("#quest__who, #quest__who-content").addClass("active");
+      $("#quest__who-content").show();
 
       $(".question__item").click(function () {
         $(".question__item").removeClass("active");
@@ -190,38 +187,35 @@ $(document).ready(function () {
         var blockItem = $(this).attr("id") + "-content";
         $("#" + blockItem).show();
       });
-      
     });
-  })
+  });
 
-
-  $('.miss').click(function () {
-    $(this).addClass('missing');
-    $('#typing4, .step3__box').addClass('minimal')
-    $('#step1').removeClass('opacity');
-    setTimeout(function(){
-      $('#step1').removeClass('active');
+  $(".miss").click(function () {
+    $(this).addClass("missing");
+    $("#typing4, .step3__box").addClass("minimal");
+    $("#step1").removeClass("opacity");
+    setTimeout(function () {
+      $("#step1").removeClass("active");
     }, 1500);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("active");
       $(".step3__box").addClass("active");
     }, 550);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("opacity");
     }, 650);
- 
+
     $(".select").click(function () {
       $(".select__list").addClass("active");
     });
-    $('#meeting-time').change(function() {
-      var timing = $('#meeting-time').val().replace('T', ' ');
-      $(this).removeClass('disactive');
-      $('.date__field').text(timing);
-      $('.date__field').show();
-      $(this).val(' ');
-      $(this).css('color', '#fff')
+    $("#meeting-time").change(function () {
+      var timing = $("#meeting-time").val().replace("T", " ");
+      $(this).removeClass("disactive");
+      $(".date__field").text(timing);
+      $(".date__field").show();
+      $(this).val(" ");
+      $(this).css("color", "#fff");
     });
-
 
     $(".select__list-item").click(function (e) {
       $(".select__list").removeClass("active");
@@ -249,70 +243,61 @@ $(document).ready(function () {
       lastScrollTop = st;
     });
 
-    if (!$('#typing4').length) {
-      $('.step3__box').html(`<span id="typing4"></span>`);
-    } 
+    if (!$("#typing4").length) {
+      $(".step3__box").html(`<span id="typing4"></span>`);
+    }
 
-
-    $('.back2').click(function() {
-      if ($('.miss').hasClass('missing')) {
-          $('.step3').removeClass('opacity');
-          $('.step1__btn').attr('disabled', false);
-          $('.step1__btn').removeClass('active');
-          setTimeout(function(){
-            $('.step3').removeClass('active');
-            $('.step3__box').removeClass('active');
-            }, 500);
-          setTimeout(function(){
-            $(".step1").addClass("active");
-            // $(".step2__box.men").addClass("active");
-          }, 550);
-          setTimeout(function(){
-            $(".step1").addClass("opacity");
-          }, 650);
-            $("#typing4").remove();
-        } else {
-          $("body").removeClass("stop-scroll");
-          $('#step3').removeClass('opacity');
-          $('.step3__box').removeClass('opacity');
-          setTimeout(function(){
-            $('#step3').removeClass('active');
-          }, 1500);
-          setTimeout(function(){
-            $("#step2__women").addClass("active");
-            $(".step2__box.women").addClass("active");
-          }, 550);
-          setTimeout(function(){
-            $("#step2__women").addClass("opacity");
-          }, 650);
-          $("#typing4").remove();
-        }
+    $(".back2").click(function () {
+      if ($(".miss").hasClass("missing")) {
+        $(".step3").removeClass("opacity");
+        $(".step1__btn").attr("disabled", false);
+        $(".step1__btn").removeClass("active");
+        setTimeout(function () {
+          $(".step3").removeClass("active");
+          $(".step3__box").removeClass("active");
+        }, 500);
+        setTimeout(function () {
+          $(".step1").addClass("active");
+          // $(".step2__box.men").addClass("active");
+        }, 550);
+        setTimeout(function () {
+          $(".step1").addClass("opacity");
+        }, 650);
+        $("#typing4").remove();
+      } else {
+        $("body").removeClass("stop-scroll");
+        $("#step3").removeClass("opacity");
+        $(".step3__box").removeClass("opacity");
+        setTimeout(function () {
+          $("#step3").removeClass("active");
+        }, 1500);
+        setTimeout(function () {
+          $("#step2__women").addClass("active");
+          $(".step2__box.women").addClass("active");
+        }, 550);
+        setTimeout(function () {
+          $("#step2__women").addClass("opacity");
+        }, 650);
+        $("#typing4").remove();
+      }
     });
 
-
-
-
-
-
-
-  
-
     $("#typing4").typed({
-      strings: ['Бла бла бла бла'],
+      strings: ["Бла бла бла бла"],
       typeSpeed: -200,
       startDelay: 800,
       contentType: "html",
     });
 
     $("#questions__btn").click(function () {
-      $('#step3').removeClass('opacity');
-      setTimeout(function(){
-        $('#step3').removeClass('active');
+      $("#step3").removeClass("opacity");
+      setTimeout(function () {
+        $("#step3").removeClass("active");
       }, 1000);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("active");
       }, 450);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("opacity");
       }, 1000);
 
@@ -332,28 +317,26 @@ $(document).ready(function () {
         var blockItem = $(this).attr("id") + "-content";
         $("#" + blockItem).show();
       });
-      
     });
-
   });
 
   $(".pain.pain__men").click(function () {
     $("body").addClass("stop-scroll");
-    $('#step2__men').removeClass('opacity');
-    setTimeout(function(){
-      $('#step2__men').removeClass('active');
+    $("#step2__men").removeClass("opacity");
+    setTimeout(function () {
+      $("#step2__men").removeClass("active");
     }, 1500);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("active");
       $(".step3__box").addClass("active");
     }, 550);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("opacity");
     }, 650);
 
-    var step = $('.step.active')[0]
-    $('.back-btn').attr('data-step-prev', $(step).attr('id') )
-    
+    var step = $(".step.active")[0];
+    $(".back-btn").attr("data-step-prev", $(step).attr("id"));
+
     var lastScrollTop = 0;
     $(window).scroll(function (event) {
       var st = $(this).scrollTop();
@@ -537,52 +520,50 @@ $(document).ready(function () {
       4. Воспаление синовиального мешка (бурсит): Воспаление мешочка, содержащего смазывающую жидкость, что может вызвать отек и боль.<br>
       По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`;
 
-      if (!$('#typing4').length) {
-        $('.step3__box').html(`<span id="typing4"></span>`);
-      } 
+    if (!$("#typing4").length) {
+      $(".step3__box").html(`<span id="typing4"></span>`);
+    }
 
-      $('.back2').click(function() {
-        $("body").removeClass("stop-scroll");
-        $('#step3').removeClass('opacity');
-        $('.step3__box').removeClass('opacity');
-        setTimeout(function(){
-          $('#step3').removeClass('active');
-        }, 1500);
-        setTimeout(function(){
-          $("#step2__men").addClass("active");
-          $(".step2__box.men").addClass("active");
-        }, 550);
-        setTimeout(function(){
-          $("#step2__men").addClass("opacity");
-        }, 650);
-        $("#typing4").remove();
+    $(".back2").click(function () {
+      $("body").removeClass("stop-scroll");
+      $("#step3").removeClass("opacity");
+      $(".step3__box").removeClass("opacity");
+      setTimeout(function () {
+        $("#step3").removeClass("active");
+      }, 1500);
+      setTimeout(function () {
+        $("#step2__men").addClass("active");
+        $(".step2__box.men").addClass("active");
+      }, 550);
+      setTimeout(function () {
+        $("#step2__men").addClass("opacity");
+      }, 650);
+      $("#typing4").remove();
+    });
+
+    function goType(id, text, item) {
+      var text = eval(id);
+      $("#typing4").typed({
+        strings: [text],
+        typeSpeed: -800,
+        startDelay: 800,
+        contentType: "html",
       });
-
-      function goType(id, text, item) {
-        var text = eval(id);
-        $("#typing4").typed({
-          strings: [text],
-          typeSpeed: -800,
-          startDelay: 800,
-          contentType: "html",
-        });
-        $("#pain__about").attr("data-pain", item);
-      }
-   goType($(this).attr("id"), $(this).attr("id"), $(this).attr("data-item"));
-
-
+      $("#pain__about").attr("data-pain", item);
+    }
+    goType($(this).attr("id"), $(this).attr("id"), $(this).attr("data-item"));
 
     $(".select").click(function () {
       $(".select__list").addClass("active");
     });
 
-    $('#meeting-time').change(function() {
-      var timing = $('#meeting-time').val().replace('T', ' ');
-      $(this).removeClass('disactive');
-      $('.date__field').text(timing);
-      $('.date__field').show();
-      $(this).val(' ');
-      $(this).css('color', '#fff')
+    $("#meeting-time").change(function () {
+      var timing = $("#meeting-time").val().replace("T", " ");
+      $(this).removeClass("disactive");
+      $(".date__field").text(timing);
+      $(".date__field").show();
+      $(this).val(" ");
+      $(this).css("color", "#fff");
     });
 
     $(".select__list-item").click(function (e) {
@@ -597,14 +578,14 @@ $(document).ready(function () {
     });
 
     $("#questions__btn").click(function () {
-      $('#step3').removeClass('opacity');
-      setTimeout(function(){
-        $('#step3').removeClass('active');
+      $("#step3").removeClass("opacity");
+      setTimeout(function () {
+        $("#step3").removeClass("active");
       }, 1300);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("active");
       }, 550);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("opacity");
       }, 1400);
 
@@ -614,7 +595,6 @@ $(document).ready(function () {
         },
         1300
       );
-
 
       $("#typing5").typed({
         strings: [
@@ -632,46 +612,47 @@ $(document).ready(function () {
         var blockItem = $(this).attr("id") + "-content";
         $("#" + blockItem).show();
       });
-
     });
 
     var timer;
-var isPaused = false;
- 
-$("#typing4").on('wheel', function(){
-	isPaused = true;
-	clearTimeout(timer);  
-});
-$("#typing4").bind('touchmove', function(e) {
-	isPaused = true;
-	clearTimeout(timer);
-});
- 
-window.setInterval(function(){          
-	if(!isPaused){
-		$("#typing4").animate({scrollTop: ($("#typing4")[0].scrollHeight)}, 100);
-	}
-}, 500);
-  });
+    var isPaused = false;
 
+    $("#typing4").on("wheel", function () {
+      isPaused = true;
+      clearTimeout(timer);
+    });
+    $("#typing4").bind("touchmove", function (e) {
+      isPaused = true;
+      clearTimeout(timer);
+    });
+
+    window.setInterval(function () {
+      if (!isPaused) {
+        $("#typing4").animate(
+          { scrollTop: $("#typing4")[0].scrollHeight },
+          100
+        );
+      }
+    }, 500);
+  });
 
   $(".pain.pain__women").click(function () {
     $("body").addClass("stop-scroll");
-    $('#step2__women').removeClass('opacity');
-    setTimeout(function(){
-      $('#step2__women').removeClass('active');
+    $("#step2__women").removeClass("opacity");
+    setTimeout(function () {
+      $("#step2__women").removeClass("active");
     }, 1500);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("active");
       $(".step3__box").addClass("active");
     }, 550);
-    setTimeout(function(){
+    setTimeout(function () {
       $("#step3").addClass("opacity");
     }, 650);
 
-    var step = $('.step.active')[0]
-    $('.back-btn').attr('data-step-prev', $(step).attr('id') )
-    
+    var step = $(".step.active")[0];
+    $(".back-btn").attr("data-step-prev", $(step).attr("id"));
+
     var lastScrollTop = 0;
     $(window).scroll(function (event) {
       var st = $(this).scrollTop();
@@ -691,8 +672,7 @@ window.setInterval(function(){
       lastScrollTop = st;
     });
 
-    var pain__grud_w =
-      `Боль в грудном отделе позвоночника:<br>
+    var pain__grud_w = `Боль в грудном отделе позвоночника:<br>
 
       1.Межрёберная невралгия: острый, колющий или жгучий болевой синдром, который проходит вдоль нерва между рёбрами.<br>
       Остеохондроз: дегенеративные изменения позвонков и межпозвонковых дисков.<br>
@@ -706,8 +686,8 @@ window.setInterval(function(){
       Переутомление или перенапряжение: например, после интенсивной физической работы или тренировки.
       Всегда важно помнить, что если у человека есть симптомы или проблемы со здоровьем, ему следует обратиться к специалисту для получения консультации и диагностики.<br>
       
-      По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`
-    var pain__taz_w =`Боль в тазобедренном суставе часто связана с возрастными или травматическими изменениями, но может быть и результатом воспалительных заболеваний. Вот детальное описание основных симптомов и возможных причин:<br>
+      По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`;
+    var pain__taz_w = `Боль в тазобедренном суставе часто связана с возрастными или травматическими изменениями, но может быть и результатом воспалительных заболеваний. Вот детальное описание основных симптомов и возможных причин:<br>
 
       1. Ограничение движения сустава:<br>
         Может быть связано с дегенеративными изменениями, воспалением или травмой.<br><br>
@@ -727,8 +707,7 @@ window.setInterval(function(){
       Боль при ходьбе, подъеме по лестнице или приседании: Часто связана с дегенеративными изменениями или воспалением.<br>
 
 
-      По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`
-
+      По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`;
 
     var pain__golova_w = `1. Головная боль:<br>
       Тензионная головная боль: обычно охватывает всю голову, может ощущаться как "обруч".
@@ -776,7 +755,7 @@ window.setInterval(function(){
       Сдавление лучевого нерва в области предплечья может вызвать боль, онемение и слабость в руке и пальцах.<br>
     Если у человека есть симптомы, связанные с рукой или пальцами, следует обратиться к терапевту, неврологу, ортопеду или ревматологу для диагностики и лечения. В зависимости от симптомов может потребоваться проведение электронейромиографии, УЗИ, МРТ или других обследований для определения причины боли и онемения.<br> По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`;
 
-    var pain__rodi_w = `Восстановление после родов`
+    var pain__rodi_w = `Восстановление после родов`;
 
     var pain__visok_w = `Височно-челюстной сустав (ВЧС) соединяет нижнюю челюсть с височной костью черепа. Проблемы с этим суставом могут привести к ряду симптомов. Ваш список довольно полный, но я предлагаю некоторые уточнения и дополнения:<br>
     1.Головная боль: <br>
@@ -871,7 +850,7 @@ window.setInterval(function(){
     Диарею или запор.<br>
     Общую слабость или усталость.<br><br>
     
-    По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`
+    По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`;
 
     var pain__kopch_w = `
       Боль в копчике, или кокцигодиния, может быть вызвана различными причинами. Это чувствительное и неудобное состояние может возникать при длительном сидении, после травмы или без видимой причины.<br>
@@ -910,52 +889,50 @@ window.setInterval(function(){
       4. Воспаление синовиального мешка (бурсит): Воспаление мешочка, содержащего смазывающую жидкость, что может вызвать отек и боль.<br>
       По результатам приема вы получите рекомендации, от Андреева Даниила направленные на устранение вашей проблемы.`;
 
-      if (!$('#typing4').length) {
-        $('.step3__box').html(`<span id="typing4"></span>`);
-      } 
+    if (!$("#typing4").length) {
+      $(".step3__box").html(`<span id="typing4"></span>`);
+    }
 
-      $('.back2').click(function() {
-        $("body").removeClass("stop-scroll");
-        $('#step3').removeClass('opacity');
-        $('.step3__box').removeClass('opacity');
-        setTimeout(function(){
-          $('#step3').removeClass('active');
-        }, 1500);
-        setTimeout(function(){
-          $("#step2__women").addClass("active");
-          $(".step2__box.women").addClass("active");
-        }, 550);
-        setTimeout(function(){
-          $("#step2__women").addClass("opacity");
-        }, 650);
-        $("#typing4").remove();
+    $(".back2").click(function () {
+      $("body").removeClass("stop-scroll");
+      $("#step3").removeClass("opacity");
+      $(".step3__box").removeClass("opacity");
+      setTimeout(function () {
+        $("#step3").removeClass("active");
+      }, 1500);
+      setTimeout(function () {
+        $("#step2__women").addClass("active");
+        $(".step2__box.women").addClass("active");
+      }, 550);
+      setTimeout(function () {
+        $("#step2__women").addClass("opacity");
+      }, 650);
+      $("#typing4").remove();
+    });
+
+    function goType(id, text, item) {
+      var text = eval(id);
+      $("#typing4").typed({
+        strings: [text],
+        typeSpeed: -800,
+        startDelay: 800,
+        contentType: "html",
       });
-
-      function goType(id, text, item) {
-        var text = eval(id);
-        $("#typing4").typed({
-          strings: [text],
-          typeSpeed: -800,
-          startDelay: 800,
-          contentType: "html",
-        });
-        $("#pain__about").attr("data-pain", item);
-      }
-   goType($(this).attr("id"), $(this).attr("id"), $(this).attr("data-item"));
-
-
+      $("#pain__about").attr("data-pain", item);
+    }
+    goType($(this).attr("id"), $(this).attr("id"), $(this).attr("data-item"));
 
     $(".select").click(function () {
       $(".select__list").addClass("active");
     });
 
-    $('#meeting-time').change(function() {
-      var timing = $('#meeting-time').val().replace('T', ' ');
-      $(this).removeClass('disactive');
-      $('.date__field').text(timing);
-      $('.date__field').show();
-      $(this).val(' ');
-      $(this).css('color', '#fff')
+    $("#meeting-time").change(function () {
+      var timing = $("#meeting-time").val().replace("T", " ");
+      $(this).removeClass("disactive");
+      $(".date__field").text(timing);
+      $(".date__field").show();
+      $(this).val(" ");
+      $(this).css("color", "#fff");
     });
 
     $(".select__list-item").click(function (e) {
@@ -970,17 +947,16 @@ window.setInterval(function(){
     });
 
     $("#questions__btn").click(function () {
-      $('#step3').removeClass('opacity');
-      setTimeout(function(){
-        $('#step3').removeClass('active');
+      $("#step3").removeClass("opacity");
+      setTimeout(function () {
+        $("#step3").removeClass("active");
       }, 1300);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("active");
       }, 550);
-      setTimeout(function(){
+      setTimeout(function () {
         $("#step4").addClass("opacity");
       }, 1400);
-
 
       $("#typing5").typed({
         strings: [
@@ -998,55 +974,54 @@ window.setInterval(function(){
         var blockItem = $(this).attr("id") + "-content";
         $("#" + blockItem).show();
       });
-
     });
 
     var timer;
-var isPaused = false;
- 
-$("#typing4").on('wheel', function(){
-	isPaused = true;
-	clearTimeout(timer);  
-});
-$("#typing4").bind('touchmove', function(e) {
-	isPaused = true;
-	clearTimeout(timer);
-});
- 
-window.setInterval(function(){          
-	if(!isPaused){
-		$("#typing4").animate({scrollTop: ($("#typing4")[0].scrollHeight)}, 100);
-	}
-}, 500);
+    var isPaused = false;
+
+    $("#typing4").on("wheel", function () {
+      isPaused = true;
+      clearTimeout(timer);
+    });
+    $("#typing4").bind("touchmove", function (e) {
+      isPaused = true;
+      clearTimeout(timer);
+    });
+
+    window.setInterval(function () {
+      if (!isPaused) {
+        $("#typing4").animate(
+          { scrollTop: $("#typing4")[0].scrollHeight },
+          100
+        );
+      }
+    }, 500);
   });
 
-
-
-
-$('.back3').click(function() {
-  if ($('#whois').hasClass('checked')) {
-    $('#whois').removeClass('checked');
-    $('#step4').removeClass('opacity');
-    setTimeout(function(){
-      $('#step4').removeClass('active');
-    }, 500);
-    setTimeout(function(){
-      $("#step1").addClass("active");
-    }, 550);
-    setTimeout(function(){
-      $("#step1").addClass("opacity");
-    }, 650);
-  } else {
-    $('#step4').removeClass('opacity');
-    setTimeout(function(){
-      $('#step4').removeClass('active');
-    }, 500);
-    setTimeout(function(){
-      $("#step3").addClass("active");
-    }, 550);
-    setTimeout(function(){
-      $("#step3").addClass("opacity");
-    }, 650);
-  }
-})
+  $(".back3").click(function () {
+    if ($("#whois").hasClass("checked")) {
+      $("#whois").removeClass("checked");
+      $("#step4").removeClass("opacity");
+      setTimeout(function () {
+        $("#step4").removeClass("active");
+      }, 500);
+      setTimeout(function () {
+        $("#step1").addClass("active");
+      }, 550);
+      setTimeout(function () {
+        $("#step1").addClass("opacity");
+      }, 650);
+    } else {
+      $("#step4").removeClass("opacity");
+      setTimeout(function () {
+        $("#step4").removeClass("active");
+      }, 500);
+      setTimeout(function () {
+        $("#step3").addClass("active");
+      }, 550);
+      setTimeout(function () {
+        $("#step3").addClass("opacity");
+      }, 650);
+    }
+  });
 });

@@ -37,6 +37,7 @@ html, body {
     align-items: flex-start;
     transition: all 1s;
 }
+
 .section__box {
     width: 100%;
     margin: auto;
@@ -64,6 +65,7 @@ html, body {
     position: relative;
     z-index: 2;
 }
+
 .step1__box:before, .step2__text-box::after, .step3__box::before, .step4__box::after {
     content: '';
     position: absolute;
@@ -76,6 +78,7 @@ html, body {
     z-index: -1;
     height: 80px;
 }
+
 .step2__text-box::after, .step4__box::after {
     -moz-transform: scale(-1, W1);
     -o-transform: scale(-1, 1);
@@ -90,13 +93,16 @@ html, body {
     height: 100vh;
     min-height: 100vh;
 }
+
 .step.opacity {
     opacity: 1;
 }
+
 .step1__box {
     margin-bottom: 50px;
     width: 100%;
 }
+
 .step1 .step__content {
     max-width: 1000px;
     width: 100%;
@@ -128,6 +134,7 @@ html, body {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     cursor: pointer;
 }
+
 .miss, .whois, .miss_diagnos {
     height: 65px;
     max-width: 940px;
@@ -146,14 +153,18 @@ html, body {
     transition: all .3s;
     margin: 0 auto 22px;
 }
+
 .whois {
     margin-bottom: 0;
 }
+
 .miss_diagnos {
     margin: 0 auto 65px;
 }
+
 .miss:hover, .whois:hover, .miss_diagnos:hover {
-    background-color: #396FA7;;
+    background-color: #396FA7;
+    ;
     color: #fff;
 }
 
@@ -165,6 +176,7 @@ html, body {
     transition: all 1.5s;
     opacity: 0;
 }
+
 .step2__box .step__bot {
     max-height: 445px;
     height: 100%;
@@ -216,6 +228,7 @@ html, body {
     object-fit: contain;
     cursor: pointer;
 }
+
 #women__img-box {
     #pain__grud_w {
         top: 181px;
@@ -241,6 +254,7 @@ html, body {
         left: 448px;
         top: 346px;
     }
+
     #pain__rodi_w {
         left: 367px;
         top: 304px;
@@ -270,6 +284,7 @@ html, body {
         left: 628px;
         top: 263px;
     }
+
     #pain__mens_w {
         left: 622px;
         top: 304px;
@@ -374,7 +389,8 @@ html, body {
 #step3::-webkit-scrollbar {
     width: 0;
 }
-#step3 .step__content{
+
+#step3 .step__content {
     width: auto;
     min-width: 1000px;
 }
@@ -393,14 +409,16 @@ html, body {
     display: flex;
     animation: primary 3s linear infinite;
 }
+
 @keyframes primary {
     from {
-      top: 0%;
+        top: 0%;
     }
+
     to {
-      top: -100%;
+        top: -100%;
     }
-  }
+}
 
 #typing4::-webkit-scrollbar {
     -webkit-appearance: none;
@@ -581,10 +599,12 @@ html, body {
     border-radius: 8px;
     transition: all .3s;
 }
+
 .form .form__submit:hover {
     background-color: #fff;
     color: #396FA7;
 }
+
 .questions__btn {
     text-decoration: none;
     padding: 0;
@@ -592,10 +612,12 @@ html, body {
     color: #396FA7;
     min-width: 505px;
 }
+
 .questions__btn:hover {
     background-color: #396FA7;
     color: #fff;
 }
+
 .form__btn-box {
     display: flex;
 }
@@ -667,15 +689,18 @@ html, body {
     font-family: 'Roboto';
     margin-bottom: 20px;
 }
+
 .form__box.last {
     position: relative;
 }
+
 #meeting-time {
     box-sizing: border-box;
     width: 380px;
     z-index: 1;
     position: relative;
 }
+
 .disactive::before {
     content: 'Дата посещения';
     position: absolute;
@@ -683,6 +708,7 @@ html, body {
     top: 15px;
     color: #294C7A;
 }
+
 ::-webkit-calendar-picker-indicator {
     cursor: pointer;
     position: absolute;
@@ -694,9 +720,11 @@ html, body {
     background-size: contain;
     z-index: 2;
 }
+
 ::-webkit-datetime-edit {
     display: none;
 }
+
 .date__field {
     position: absolute;
     left: 22px;
@@ -706,6 +734,7 @@ html, body {
     background-color: #fff;
     display: none;
 }
+
 .back-btn {
     width: 80px;
     height: 80px;
@@ -720,6 +749,7 @@ html, body {
     cursor: pointer;
     right: auto;
 }
+
 .back-btn.reverse {
     left: auto;
     right: 0;
@@ -729,168 +759,194 @@ html, body {
     .step1__box {
         padding: 40px 50px;
     }
+
     .step2__text-box {
         min-width: 1210px;
     }
+
     .step2__box .step__bot {
         max-width: 210px;
     }
+
     .men__img {
         width: 680px;
         margin-top: -100px;
     }
+
     #women__img-box {
         #pain__grud_w {
             top: 74px;
             left: 110px;
         }
-    
+
         #pain__taz_w {
             top: 200px;
             left: 110px;
         }
-    
+
         #pain__golova_w {
             left: 352px;
             top: -38px;
         }
-    
+
         #pain__plech_w {
             left: 302px;
             top: 48px;
         }
-    
+
         #pain__kist_w {
             left: 429px;
             top: 236px;
         }
+
         #pain__rodi_w {
             left: 350px;
             top: 204px;
         }
-    
+
         #pain__visok_w {
             left: 570px;
             top: -32px;
         }
-    
+
         #pain__chelust_w {
             left: 595px;
             top: 3px;
         }
-    
+
         #pain__sheya_w {
             left: 553px;
             top: 14px;
         }
-    
+
         #pain__poyas_w {
             left: 545px;
             top: 175px;
         }
-    
+
         #pain__bruh_w {
             left: 598px;
             top: 153px;
         }
+
         #pain__mens_w {
             left: 597px;
             top: 205px;
         }
-    
+
         #pain__kopch_w {
             left: 538px;
             top: 225px;
         }
-    
+
         #pain__koleno_w {
             left: 577px;
             top: 347px;
         }
-    
+
         #pain__stup_w {
             bottom: 58px;
             left: 568px;
         }
     }
+
     #step2__men {
         #pain__grud {
             top: 25px;
             left: 102px;
         }
+
         #pain__taz {
             top: 178px;
             left: 101px;
         }
-        
+
         #pain__golova {
             left: 364px;
             top: -94px;
         }
+
         #pain__plech {
             left: 303px;
             top: 12px;
         }
+
         #pain__kist {
             left: 452px;
             top: 214px;
         }
+
         #pain__visok {
             left: 601px;
             top: -89px;
         }
+
         #pain__chelust {
             left: 628px;
             top: -51px;
         }
+
         #pain__sheya {
             left: 589px;
             top: -38px;
         }
+
         #pain__poyas {
             left: 581px;
             top: 123px;
         }
+
         #pain__bruh {
             left: 636px;
             top: 134px;
         }
+
         #pain__kopch {
             left: 568px;
             top: 197px;
         }
+
         #pain__koleno {
             left: 608px;
             top: 333px;
         }
+
         #pain__stup {
             bottom: 26px;
             left: 601px;
         }
     }
+
     #step3 .step__content {
         min-width: 1090px;
     }
+
     .step3__box {
         height: 490px;
     }
+
     #typing4 {
         height: 390px;
     }
+
     .step4__box {
         max-width: 1100px;
     }
+
     .step4 .section__box {
         padding: 100px 0;
         box-sizing: border-box;
     }
+
     .step1 .step__content {
         max-width: 1070px;
     }
+
     .step__text-box {
         max-width: 100%;
         min-height: 200px;
     }
+
     .men__img-box {
         margin: 100px auto 0;
     }
@@ -901,43 +957,55 @@ html, body {
     .container {
         max-width: 1400px;
     }
+
     .back-btn {
         width: 60px;
         height: 60px;
     }
+
     .back-btn__img {
         width: 20px;
     }
+
     .miss_diagnos {
         margin: 0 auto 35px;
     }
+
     .men__img-box {
         margin: 40px auto 0;
     }
+
     .step__bot {
         max-width: 270px;
     }
+
     .step1 .step__content {
         max-width: 1040px;
     }
+
     .step1__box {
         padding: 30px 35px;
     }
+
     .step__text-box {
         font-size: 28px;
     }
+
     .step1__btn, .miss, .whois {
         font-size: 30px;
     }
+
     .step2 .step__text-box {
         min-height: 100px;
         padding: 30px 35px;
         height: 100px;
         min-width: 1150px;
     }
+
     .step2__box .step__bot {
         max-width: 165px;
     }
+
     .men__img {
         width: 500px;
     }
@@ -947,70 +1015,72 @@ html, body {
             top: 17px;
             left: 76px;
         }
-    
+
         #pain__taz_w {
             top: 118px;
             left: 76px;
         }
-    
+
         #pain__golova_w {
             left: 254px;
             top: -62px;
         }
-    
+
         #pain__plech_w {
             left: 217px;
             top: 7px;
         }
-    
+
         #pain__kist_w {
             left: 313px;
             top: 144px;
         }
+
         #pain__rodi_w {
             left: 255px;
             top: 128px;
         }
-    
+
         #pain__visok_w {
             left: 414px;
             top: -58px;
         }
-    
+
         #pain__chelust_w {
             left: 434px;
             top: -25px;
         }
-    
+
         #pain__sheya_w {
             left: 401px;
             top: -18px;
         }
-    
+
         #pain__poyas_w {
             left: 399px;
             top: 99px;
         }
-    
+
         #pain__bruh_w {
             left: 436px;
             top: 83px;
         }
+
         #pain__mens_w {
             left: 434px;
             top: 119px;
         }
-    
+
         #pain__kopch_w {
             left: 391px;
             top: 140px;
         }
-    
+
         #pain__koleno_w {
             left: 421px;
             top: 223px;
         }
-    
+
         #pain__stup_w {
             bottom: 39px;
             left: 412px;
@@ -1022,79 +1092,98 @@ html, body {
             top: -5px;
             left: 69px
         }
+
         #pain__taz {
             top: 95px;
             left: 69px;
         }
-        
+
         #pain__golova {
             left: 263px;
             top: -100px;
         }
+
         #pain__plech {
             left: 218px;
             top: -23px;
         }
+
         #pain__kist {
             left: 328px;
             top: 130px;
         }
+
         #pain__visok {
             left: 434px;
             top: -98px;
         }
+
         #pain__chelust {
             left: 456px;
             top: -67px;
         }
+
         #pain__sheya {
             left: 423px;
             top: -59px;
         }
+
         #pain__poyas {
             left: 423px;
-            top: 65px;        
+            top: 65px;
         }
+
         #pain__bruh {
             left: 460px;
             top: 82px;
         }
+
         #pain__kopch {
             left: 411px;
             top: 113px;
         }
+
         #pain__koleno {
             left: 444px;
             top: 214px;
         }
+
         #pain__stup {
             bottom: 16px;
             left: 434px;
         }
     }
+
     .step3 .step__bot {
         max-width: 250px;
     }
+
     .step3__box {
         padding: 30px 35px;
         margin-bottom: 35px;
     }
+
     .form .form__submit, .questions__btn {
         height: 60px;
     }
+
     #step3 .step__content {
         max-width: 1050px;
         min-width: 1050px;
     }
+
     .step3__box {
         height: 360px;
     }
+
     #typing4 {
         height: 290px;
     }
+
     .step4__box {
         max-width: 1050px;
     }
+
     #women__img-box {
         margin-top: -15px;
     }
@@ -1104,711 +1193,850 @@ html, body {
     .container {
         max-width: 1200px;
     }
+
     .miss_diagnos {
         margin: 0 auto 15px;
     }
+
     .step__bot {
         max-width: 200px;
     }
+
     .step__text-box {
         font-size: 24px;
     }
+
     .step1 .step__content {
         max-width: 930px;
     }
+
     .step1__box {
         padding: 25px;
         margin-bottom: 35px;
     }
+
     .step1__btn, .miss, .whois {
         font-size: 22px;
     }
+
     .step1__btn {
         width: 380px;
         height: 55px;
     }
+
     .step1__btn-box {
         max-width: 860px;
     }
+
     .step1__btn, .miss, .whois {
         height: 55px;
         max-width: 860px;
     }
+
     .step2 .step__text-box {
         min-width: 950px;
     }
+
     .step3 .step__bot {
         max-width: 200px;
     }
+
     #step3 .step__content {
         max-width: 895px;
         min-width: 895px;
     }
+
     .form .form__submit, .questions__btn {
         height: 55px;
     }
+
     .step4__box {
         max-width: 920px;
     }
+
     .step4 .section__box {
         padding: 50px 0;
     }
+
     .question__item {
         font-size: 20px;
         margin-bottom: 20px;
-}
-
-@media screen and (max-width: 1280px) {
-    .container {
-        max-width: 980px;
-    }
-    #meeting-time {
-        margin-right: 45px;
-    }
-    .miss_diagnos {
-        height: 45px;
-        font-size: 18px;
-        max-width: 58%;
-    }
-    .back-btn {
-        width: 45px;
-        height: 45px;
-    }
-    .back-btn__img {
-        width: 17px;
-    }
-    .step__bot {
-        max-width: 160px;
-    }
-    .step__text-box {
-        font-size: 18px;
-    }
-    .step1 .step__content {
-        max-width: 745px;
-    }
-    .step1__btn {
-        max-width: 45%;
-        height: 45px;
-        font-size: 18px;
-    }
-    .step1__btn-box {
-        max-width: 90%;
-    }
-    .miss, .whois {
-        height: 45px;
-        font-size: 18px;
-        max-width: 90%;
-    }
-    .step2 .step__text-box {
-        min-width: 730px;
-    }
-    .step3 .step__bot {
-        max-width: 145px;
-    }
-    #step3 .step__content {
-        max-width: 750px;
-        min-width: 750px;
-    }
-    .form .form__submit, .questions__btn {
-        font-size: 18px;
-    }
-    .questions__btn {
-        min-width: 440px;
-    }
-    .step4__box {
-        max-width: 750px;
-    }
-    .step4 iframe {
-        height: 350px;
-    }
-    .quest__where-text {
-        font-size: 18px;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .container {
-        max-width: 680px;
-    }
-    .step__bot {
-        max-width: 110px;
-    }
-    .back-btn {
-        bottom: 15px;
-    }
-    .step__text-box {
-        font-size: 16px;
-        padding: 15px;
-    }
-    .miss, .whois, .step1__btn {
-        font-size: 16px;
-    }
-    .step1 .step__content {
-        max-width: 490px;
-    }
-    .step1__box:before, .step3__box::before {
-        width: 60px;
-        height: 60px;
-        left: -60px;
-    }
-    .step2__text-box::after, .step4__box::after {
-        right: -60px;
-        width: 60px;
-        height: 60px;
-    }
-    .step2 .step__text-box {
-        padding: 15px;
-        min-width: 480px;
-        margin-bottom: 15px;
-    }
-    .miss_diagnos {
-        font-size: 16px;
-    }
-    .form__box.last {
-        width: 380px;
-        margin: 0 auto;
-    }
-    .date__field {
-        left: 67px;
-    }
-    .men__img-box {
-        margin: 18px auto 0;
-    }
-    .step2__box .step__bot {
-        max-width: 110px;
-    }
-    #typing2 {
-        max-width: 400px;
-        width: 100%;
-        display: flex;
-    }
-    .men__img {
-        width: 475px;
-        margin-top: 0;
-    }
-    .pain {
-        width: 25px;
-        height: 25px;
     }
 
-    #women__img-box {
-        #pain__grud_w {
-            top: 118px;
-            left: 77px;
+    @media screen and (max-width: 1280px) {
+        .container {
+            max-width: 980px;
         }
-    
-        #pain__taz_w {
-            top: 207px;
-            left: 77px;
+
+        #meeting-time {
+            margin-right: 45px;
         }
-    
-        #pain__golova_w {
-            left: 245px;
-            top: 41px;
+
+        .miss_diagnos {
+            height: 45px;
+            font-size: 18px;
+            max-width: 58%;
         }
-    
-        #pain__plech_w {
-            left: 211px;
-            top: 102px;
+
+        .back-btn {
+            width: 45px;
+            height: 45px;
         }
-    
-        #pain__kist_w {
-            left: 300px;
-            top: 232px;
+
+        .back-btn__img {
+            width: 17px;
         }
-        #pain__rodi_w {
-            left: 245px;
-            top: 213px;
+
+        .step__bot {
+            max-width: 160px;
         }
-    
-        #pain__visok_w {
-            left: 395px;
-            top: 46px;
+
+        .step__text-box {
+            font-size: 18px;
         }
-    
-        #pain__chelust_w {
-            left: 413px;
-            top: 70px;
+
+        .step1 .step__content {
+            max-width: 745px;
         }
-    
-        #pain__sheya_w {
-            left: 388px;
-            top: 78px;
+
+        .step1__btn {
+            max-width: 45%;
+            height: 45px;
+            font-size: 18px;
         }
-    
-        #pain__poyas_w {
-            left: 382px;
-            top: 186px;
+
+        .step1__btn-box {
+            max-width: 90%;
         }
-    
-        #pain__bruh_w {
-            left: 422px;
-            top: 175px;
+
+        .miss, .whois {
+            height: 45px;
+            font-size: 18px;
+            max-width: 90%;
         }
-        #pain__mens_w {
-            left: 417px;
-            top: 208px;
+
+        .step2 .step__text-box {
+            min-width: 730px;
         }
-    
-        #pain__kopch_w {
-            left: 376px;
-            top: 227px;
+
+        .step3 .step__bot {
+            max-width: 145px;
         }
-    
-        #pain__koleno_w {
-            left: 403px;
-            top: 311px;
+
+        #step3 .step__content {
+            max-width: 750px;
+            min-width: 750px;
         }
-    
-        #pain__stup_w {
-            bottom: 39px;
-            left: 412px;
+
+        .form .form__submit, .questions__btn {
+            font-size: 18px;
+        }
+
+        .questions__btn {
+            min-width: 440px;
+        }
+
+        .step4__box {
+            max-width: 750px;
+        }
+
+        .step4 iframe {
+            height: 350px;
+        }
+
+        .quest__where-text {
+            font-size: 18px;
         }
     }
 
-    #step2__men {
-        #pain__grud {
-            top: 95px;
-            left: 70px;
+    @media screen and (max-width: 1024px) {
+        .container {
+            max-width: 680px;
         }
-        #pain__taz {
-            top: 195px;
-            left: 70px;
-        }
-        
-        #pain__golova {
-            left: 254px;
-            top: 4px;
-        }
-        #pain__plech {
-            left: 212px;
-            top: 74px;
-        }
-        #pain__kist {
-            left: 315px;
-            top: 215px;
-        }
-        #pain__visok {
-            left: 418px;
-            top: 5px;
-        }
-        #pain__chelust {
-            left: 441px;
-            top: 34px;
-        }
-        #pain__sheya {
-            left: 411px;
-            top: 40px;
-        }
-        #pain__poyas {
-            left: 404px;
-            top: 154px;        
-        }
-        #pain__bruh {
-            left: 443px;
-            top: 165px;
-        }
-        #pain__kopch {
-            left: 395px;
-            top: 206px;
-        }
-        #pain__koleno {
-            left: 425px;
-            top: 302px;
-        }
-        #pain__stup {
-            bottom: 17px;
-            left: 417px;
-        }
-    }
-    .step3 .step__bot {
-        max-width: 110px;
-    }
-    #step3 .step__content {
-        max-width: 500px;
-        min-width: 500px;
-    }
-    .form input {
-        margin-right: 0;
-        padding: 10px 20px;
-        margin-bottom: 10px;
-    }
-    .form__box {
-        flex-direction: column;
-        margin-bottom: 0;
-        align-items: center;
-    }
-    .form__btn-box {
-        flex-direction: column;
-    }
-    #meeting-time {
-        height: 50px;
-        box-sizing: border-box;
-        padding: 10px 20px;
-        width: 100%;
-        margin-right: 0;
-    }
-    ::-webkit-calendar-picker-indicator {
-        width: 20px;
-        height: 20px;
-        top: 13px;
-    }
-    .select {
-        margin-bottom: 10px;
-        padding: 10px 20px;
-    }
-    .form .form__submit {
-        margin: 0 auto 10px;
-    }
-    .form .form__submit, .questions__btn {
-        font-size: 14px;
-        height: 45px;
-        max-width: 220px;
-    }
-    .questions__btn {
-        min-width: auto;
-        max-width: 290px;
-    }
-    .form__btn-box {
-        justify-content: space-between;
-    }
-    .form .form__tel {
-        max-width: 350px;
-    }
-    .step4__box {
-        max-width: 510px;
-    }
-    .step__text-box {
-        min-height: 120px;
-        margin-bottom: 20px;
-        height: 324px;
-    }
-    #step3 {
-        padding: 20px 0 0;
-    }
-    .question__item {
-        font-size: 14px;
-    }
-    .form input, .select, .form .form__tel {
-        font-size: 14px;
-        max-width: 290px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .form__submit {
-        text-transform: uppercase;
-    }
-    .questions__btn {
-        max-width: 95%;
-        text-transform: uppercase;
-    }
-    .select__list {
-        width: 259px;
-    }
-}
 
-@media screen and (max-width: 768px) {
-    .date__field {
-        left: 85px;
-    }
-    #step2__women .step2__box .step2__text-box {
-        max-width: 430px;
-        min-width: 430px;
-    }
-    #step2__women .step2__box .step__bot {
-        max-width: 85px;
-    }
-    .select__list {
-        width: 220px;
-    }
-    .form__box.last {
-        max-width: 250px;
-    }
-    .date__field {
-        left: 35px;
-        top: 8px;
-        font-size: 14px;
-    }
-    .container {
-        max-width: 550px;
-    }
-    #meeting-time {
-        appearance: none;
-    }
-    #step4 {
-        padding: 0;
-    }
-    .step2 .back-btn {
-        bottom: 110px;
-    }
-    .step3 .back-btn {
-        bottom: 45px;
-    }
-    .step4 .back-btn {
-        bottom: 100px;
-    }
-    .section__box {
-        margin: 0 auto;
-        padding-top: 50px;
-        box-sizing: border-box;
-    }
-    .miss_diagnos {
-        font-size: 14px;
-        max-width: 70%;
-    }
-    .step2__box {
-        margin-bottom: 15px;
-    }
-    .questions__btn {
-        max-width: 100%;
-        width: 100%;
-        box-sizing: border-box;
-        min-width: auto;
-    }
-    .step3__box {
-        height: 320px;
-    }
-    .step {
-        padding-top: 50px;
-        justify-content: flex-start;
-    }
-    .section__box {
-        padding-top: 0;
-    }
-    .step__bot {
-        max-width: 85px;
-    }
-    .step1 .step__content {
-        max-width: 400px;
-    }
-    .step1__box:before, .step3__box::before {
-        width: 50px;
-        height: 50px;
-        left: -50px;
-    }
-    .step__text-box {
-        margin-bottom: 25px;
-    }
-    .step1__btn-box {
-        max-width: 85%;
-    }
-    .miss, .whois {
-        max-width: 100%;
-        font-size: 14px;
-    }    
-    .step1__btn-box {
-        margin: 0 auto 15px;
-    }
-    .step2 .step__text-box {
-        font-size: 14px;
-        min-width: 395px;
-        min-height: 65px;
-        height: 65px;
-    }
-    .step2__text-box::after {
-        right: -26px;
-        width: 26px;
-        height: 26px;
-        top: 11px;
-    }
-    .men__img {
-        width: 410px;
-    }
-    #typing2 {
-        max-width: 375px;
-    }
-    .pain {
-        width: 20px;
-        height: 20px;
-    }
+        .step__bot {
+            max-width: 110px;
+        }
 
+        .back-btn {
+            bottom: 15px;
+        }
 
-    #women__img-box {
-        #pain__grud_w {
-            top: 101px;
-            left: 66px;
+        .step__text-box {
+            font-size: 16px;
+            padding: 15px;
         }
-    
-        #pain__taz_w {
-            top: 182px;
-            left: 66px;
+
+        .miss, .whois, .step1__btn {
+            font-size: 16px;
         }
-    
-        #pain__golova_w {
-            left: 212px;
-            top: 36px;
+
+        .step1 .step__content {
+            max-width: 490px;
         }
-    
-        #pain__plech_w {
-            left: 181px;
-            top: 91px;
+
+        .step1__box:before, .step3__box::before {
+            width: 60px;
+            height: 60px;
+            left: -60px;
         }
-    
-        #pain__kist_w {
-            left: 260px;
-            top: 204px;
+
+        .step2__text-box::after, .step4__box::after {
+            right: -60px;
+            width: 60px;
+            height: 60px;
         }
-        #pain__rodi_w {
-            left: 212px;
-            top: 183px;
+
+        .step2 .step__text-box {
+            padding: 15px;
+            min-width: 480px;
+            margin-bottom: 15px;
         }
-    
-        #pain__visok_w {
-            left: 346px;
-            top: 38px;
+
+        .miss_diagnos {
+            font-size: 16px;
         }
-    
-        #pain__chelust_w {
-            left: 359px;
-            top: 63px;
+
+        .form__box.last {
+            width: 380px;
+            margin: 0 auto;
         }
-    
-        #pain__sheya_w {
-            left: 337px;
-            top: 69px;
+
+        .date__field {
+            left: 67px;
         }
-    
-        #pain__poyas_w {
-            left: 328px;
-            top: 162px;        
+
+        .men__img-box {
+            margin: 18px auto 0;
         }
-    
-        #pain__bruh_w {
-            left: 365px;
-            top: 156px;
+
+        .step2__box .step__bot {
+            max-width: 110px;
         }
-        #pain__mens_w {
-            left: 360px;
-            top: 182px;
+
+        #typing2 {
+            max-width: 400px;
+            width: 100%;
+            display: flex;
         }
-    
-        #pain__kopch_w {
-            left: 325px;
-            top: 198px;
+
+        .men__img {
+            width: 475px;
+            margin-top: 0;
         }
-    
-        #pain__koleno_w {
-            left: 348px;
-            top: 270px;
+
+        .pain {
+            width: 25px;
+            height: 25px;
         }
-    
-        #pain__stup_w {
-            bottom: 36px;
-            left: 341px;
+
+        #women__img-box {
+            #pain__grud_w {
+                top: 118px;
+                left: 77px;
+            }
+
+            #pain__taz_w {
+                top: 207px;
+                left: 77px;
+            }
+
+            #pain__golova_w {
+                left: 245px;
+                top: 41px;
+            }
+
+            #pain__plech_w {
+                left: 211px;
+                top: 102px;
+            }
+
+            #pain__kist_w {
+                left: 300px;
+                top: 232px;
+            }
+
+            #pain__rodi_w {
+                left: 245px;
+                top: 213px;
+            }
+
+            #pain__visok_w {
+                left: 395px;
+                top: 46px;
+            }
+
+            #pain__chelust_w {
+                left: 413px;
+                top: 70px;
+            }
+
+            #pain__sheya_w {
+                left: 388px;
+                top: 78px;
+            }
+
+            #pain__poyas_w {
+                left: 382px;
+                top: 186px;
+            }
+
+            #pain__bruh_w {
+                left: 422px;
+                top: 175px;
+            }
+
+            #pain__mens_w {
+                left: 417px;
+                top: 208px;
+            }
+
+            #pain__kopch_w {
+                left: 376px;
+                top: 227px;
+            }
+
+            #pain__koleno_w {
+                left: 403px;
+                top: 311px;
+            }
+
+            #pain__stup_w {
+                bottom: 39px;
+                left: 412px;
+            }
         }
-    }
-    #step2__women .step2__box .step2__text-box {
-        max-width: 75%;
-        min-width: 75%;
+
+        #step2__men {
+            #pain__grud {
+                top: 95px;
+                left: 70px;
+            }
+
+            #pain__taz {
+                top: 195px;
+                left: 70px;
+            }
+
+            #pain__golova {
+                left: 254px;
+                top: 4px;
+            }
+
+            #pain__plech {
+                left: 212px;
+                top: 74px;
+            }
+
+            #pain__kist {
+                left: 315px;
+                top: 215px;
+            }
+
+            #pain__visok {
+                left: 418px;
+                top: 5px;
+            }
+
+            #pain__chelust {
+                left: 441px;
+                top: 34px;
+            }
+
+            #pain__sheya {
+                left: 411px;
+                top: 40px;
+            }
+
+            #pain__poyas {
+                left: 404px;
+                top: 154px;
+            }
+
+            #pain__bruh {
+                left: 443px;
+                top: 165px;
+            }
+
+            #pain__kopch {
+                left: 395px;
+                top: 206px;
+            }
+
+            #pain__koleno {
+                left: 425px;
+                top: 302px;
+            }
+
+            #pain__stup {
+                bottom: 17px;
+                left: 417px;
+            }
+        }
+
+        .step3 .step__bot {
+            max-width: 110px;
+        }
+
+        #step3 .step__content {
+            max-width: 500px;
+            min-width: 500px;
+        }
+
+        .form input {
+            margin-right: 0;
+            padding: 10px 20px;
+            margin-bottom: 10px;
+        }
+
+        .form__box {
+            flex-direction: column;
+            margin-bottom: 0;
+            align-items: center;
+        }
+
+        .form__btn-box {
+            flex-direction: column;
+        }
+
+        #meeting-time {
+            height: 50px;
+            box-sizing: border-box;
+            padding: 10px 20px;
+            width: 100%;
+            margin-right: 0;
+        }
+
+        ::-webkit-calendar-picker-indicator {
+            width: 20px;
+            height: 20px;
+            top: 13px;
+        }
+
+        .select {
+            margin-bottom: 10px;
+            padding: 10px 20px;
+        }
+
+        .form .form__submit {
+            margin: 0 auto 10px;
+        }
+
+        .form .form__submit, .questions__btn {
+            font-size: 14px;
+            height: 45px;
+            max-width: 220px;
+        }
+
+        .questions__btn {
+            min-width: auto;
+            max-width: 290px;
+        }
+
+        .form__btn-box {
+            justify-content: space-between;
+        }
+
+        .form .form__tel {
+            max-width: 350px;
+        }
+
+        .step4__box {
+            max-width: 510px;
+        }
+
+        .step__text-box {
+            min-height: 120px;
+            margin-bottom: 20px;
+            height: 324px;
+        }
+
+        #step3 {
+            padding: 20px 0 0;
+        }
+
+        .question__item {
+            font-size: 14px;
+        }
+
+        .form input, .select, .form .form__tel {
+            font-size: 14px;
+            max-width: 290px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form__submit {
+            text-transform: uppercase;
+        }
+
+        .questions__btn {
+            max-width: 95%;
+            text-transform: uppercase;
+        }
+
+        .select__list {
+            width: 259px;
+        }
     }
 
+    @media screen and (max-width: 768px) {
+        .date__field {
+            left: 85px;
+        }
 
-    #step2__men {
-        #pain__grud {
-            top: 73px;
-            left: 62px;
+        #step2__women .step2__box .step2__text-box {
+            max-width: 430px;
+            min-width: 430px;
         }
-        #pain__taz {
-            top: 162px;
-            left: 62px;
+
+        #step2__women .step2__box .step__bot {
+            max-width: 85px;
         }
-        
-        #pain__golova {
-            left: 220px;
-            top: 2px;
+
+        .select__list {
+            width: 220px;
         }
-        #pain__plech {
-            left: 184px;
-            top: 66px;
+
+        .form__box.last {
+            max-width: 250px;
         }
-        #pain__kist {
-            left: 272px;
-            top: 185px;
+
+        .date__field {
+            left: 35px;
+            top: 8px;
+            font-size: 14px;
         }
-        #pain__visok {
-            left: 360px;
-            top: 6px;
+
+        .container {
+            max-width: 550px;
         }
-        #pain__chelust {
-            left: 378px;
-            top: 30px;
+
+        #meeting-time {
+            appearance: none;
         }
-        #pain__sheya {
-            left: 353px;
-            top: 36px;
+
+        #step4 {
+            padding: 0;
         }
-        #pain__poyas {
-            left: 348px;
-            top: 140px;        
+
+        .step2 .back-btn {
+            bottom: 110px;
         }
-        #pain__bruh {
-            left: 381px;
-            top: 148px;
+
+        .step3 .back-btn {
+            bottom: 45px;
         }
-        #pain__kopch {
-            left: 342px;
-            top: 179px;
+
+        .step4 .back-btn {
+            bottom: 100px;
         }
-        #pain__koleno {
-            left: 367px;
-            top: 262px;
+
+        .section__box {
+            margin: 0 auto;
+            padding-top: 50px;
+            box-sizing: border-box;
         }
-        #pain__stup {
-            bottom: 18px;
-            left: 359px;
+
+        .miss_diagnos {
+            font-size: 14px;
+            max-width: 70%;
+        }
+
+        .step2__box {
+            margin-bottom: 15px;
+        }
+
+        .questions__btn {
+            max-width: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            min-width: auto;
+        }
+
+        .step3__box {
+            height: 320px;
+        }
+
+        .step {
+            padding-top: 50px;
+            justify-content: flex-start;
+        }
+
+        .section__box {
+            padding-top: 0;
+        }
+
+        .step__bot {
+            max-width: 85px;
+        }
+
+        .step1 .step__content {
+            max-width: 400px;
+        }
+
+        .step1__box:before, .step3__box::before {
+            width: 50px;
+            height: 50px;
+            left: -50px;
+        }
+
+        .step__text-box {
+            margin-bottom: 25px;
+        }
+
+        .step1__btn-box {
+            max-width: 85%;
+        }
+
+        .miss, .whois {
+            max-width: 100%;
+            font-size: 14px;
+        }
+
+        .step1__btn-box {
+            margin: 0 auto 15px;
+        }
+
+        .step2 .step__text-box {
+            font-size: 14px;
+            min-width: 395px;
+            min-height: 65px;
+            height: 65px;
+        }
+
+        .step2__text-box::after {
+            right: -26px;
+            width: 26px;
+            height: 26px;
+            top: 11px;
+        }
+
+        .men__img {
+            width: 410px;
+        }
+
+        #typing2 {
+            max-width: 375px;
+        }
+
+        .pain {
+            width: 20px;
+            height: 20px;
+        }
+
+
+        #women__img-box {
+            #pain__grud_w {
+                top: 101px;
+                left: 66px;
+            }
+
+            #pain__taz_w {
+                top: 182px;
+                left: 66px;
+            }
+
+            #pain__golova_w {
+                left: 212px;
+                top: 36px;
+            }
+
+            #pain__plech_w {
+                left: 181px;
+                top: 91px;
+            }
+
+            #pain__kist_w {
+                left: 260px;
+                top: 204px;
+            }
+
+            #pain__rodi_w {
+                left: 212px;
+                top: 183px;
+            }
+
+            #pain__visok_w {
+                left: 346px;
+                top: 38px;
+            }
+
+            #pain__chelust_w {
+                left: 359px;
+                top: 63px;
+            }
+
+            #pain__sheya_w {
+                left: 337px;
+                top: 69px;
+            }
+
+            #pain__poyas_w {
+                left: 328px;
+                top: 162px;
+            }
+
+            #pain__bruh_w {
+                left: 365px;
+                top: 156px;
+            }
+
+            #pain__mens_w {
+                left: 360px;
+                top: 182px;
+            }
+
+            #pain__kopch_w {
+                left: 325px;
+                top: 198px;
+            }
+
+            #pain__koleno_w {
+                left: 348px;
+                top: 270px;
+            }
+
+            #pain__stup_w {
+                bottom: 36px;
+                left: 341px;
+            }
+        }
+
+        #step2__women .step2__box .step2__text-box {
+            max-width: 75%;
+            min-width: 75%;
+        }
+
+
+        #step2__men {
+            #pain__grud {
+                top: 73px;
+                left: 62px;
+            }
+
+            #pain__taz {
+                top: 162px;
+                left: 62px;
+            }
+
+            #pain__golova {
+                left: 220px;
+                top: 2px;
+            }
+
+            #pain__plech {
+                left: 184px;
+                top: 66px;
+            }
+
+            #pain__kist {
+                left: 272px;
+                top: 185px;
+            }
+
+            #pain__visok {
+                left: 360px;
+                top: 6px;
+            }
+
+            #pain__chelust {
+                left: 378px;
+                top: 30px;
+            }
+
+            #pain__sheya {
+                left: 353px;
+                top: 36px;
+            }
+
+            #pain__poyas {
+                left: 348px;
+                top: 140px;
+            }
+
+            #pain__bruh {
+                left: 381px;
+                top: 148px;
+            }
+
+            #pain__kopch {
+                left: 342px;
+                top: 179px;
+            }
+
+            #pain__koleno {
+                left: 367px;
+                top: 262px;
+            }
+
+            #pain__stup {
+                bottom: 18px;
+                left: 359px;
+            }
+        }
+
+        .step3 .step__bot {
+            max-width: 75px;
+        }
+
+        #step3 .step__content {
+            max-width: 425px;
+            min-width: 425px;
+        }
+
+        .form input, .select, .form .form__tel {
+            font-size: 14px;
+            max-width: 250px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form__submit {
+            text-transform: uppercase;
+        }
+
+        .questions__btn {
+            max-width: 95%;
+            text-transform: uppercase;
+        }
+
+        .form__btn-box {
+            align-items: center;
+        }
+
+        .form__box {
+            align-items: center;
+        }
+
+        .form input::-webkit-input-placeholder {
+            font-size: 14px;
+        }
+
+        .form input::-moz-placeholder {
+            font-size: 14px;
+        }
+
+        .form input:-moz-placeholder {
+            font-size: 14px;
+        }
+
+        .form input:-ms-input-placeholder {
+            font-size: 14px;
+        }
+
+        .form__btn-box {
+            flex-direction: column;
+        }
+
+        .step4__box {
+            max-width: 400px;
+        }
+
+        .step4__box {
+            min-height: 80px;
         }
     }
-    .step3 .step__bot {
-        max-width: 75px;
-    }
-    #step3 .step__content {
-        max-width: 425px;
-        min-width: 425px;
-    }
-    .form input, .select, .form .form__tel {
-        font-size: 14px;
-        max-width: 250px;
-        width: 100%;
-        box-sizing: border-box;
-    }
-    .form__submit {
-        text-transform: uppercase;
-    }
-    .questions__btn {
-        max-width: 95%;
-        text-transform: uppercase;
-    }
-    .form__btn-box {
-        align-items: center;
-    }
-    .form__box {
-        align-items: center;
-    }
-    .form input::-webkit-input-placeholder {
-        font-size: 14px;
-    }
-    
-    .form input::-moz-placeholder {
-        font-size: 14px;
-    }
-    
-    .form input:-moz-placeholder {
-        font-size: 14px;
-    }
-    
-    .form input:-ms-input-placeholder {
-        font-size: 14px;
-    }
-    .form__btn-box {
-        flex-direction: column;
-    }
-    .step4__box {
-        max-width: 400px;
-    }
-    .step4__box {
-        min-height: 80px;
-    }
-}
 }
 
 @media screen and (max-width: 600px) {
@@ -1823,95 +2051,115 @@ html, body {
         background-repeat: no-repeat;
         background-image: url('/assets/images/arrow.png');
     }
+
     .select__list {
         left: -7px;
     }
+
     .container {
         max-width: 420px;
     }
+
     .step1 .step__content {
         max-width: 300px;
     }
+
     .miss_diagnos {
         height: 35px;
         font-size: 12px;
         max-width: 75%;
     }
+
     .step3__box {
         height: 230px;
     }
+
     #typing4 {
         height: 200px;
     }
-    
+
     .step1__box:before, .step3__box::before {
         width: 35px;
         height: 35px;
         left: -35px;
     }
+
     .step__text-box {
         font-size: 14px;
-    }    
+    }
+
     .step1__btn {
         max-width: 48%;
         height: 35px;
     }
+
     .step1__btn-box {
         max-width: 100%;
     }
+
     .miss, .whois {
         font-size: 10px;
         height: 35px;
     }
+
     .step1__box {
         margin-bottom: 20px;
     }
+
     .miss {
         margin-bottom: 10px;
     }
+
     #typing2 {
         font-size: 14px;
     }
+
     .step2__box .step__bot {
         max-width: 75px;
     }
+
     .step2 .step__text-box, #typing2 {
         min-width: 290px;
         max-width: 290px;
     }
+
     #typing2 {
         min-width: 260px;
         max-width: 260px;
     }
+
     #step3 .step__content {
         max-width: 300px;
         min-width: 290px;
     }
-   
+
     .form input::-webkit-input-placeholder {
         font-size: 12px;
     }
-    
+
     .form input::-moz-placeholder {
         font-size: 12px;
     }
-    
+
     .form input:-moz-placeholder {
         font-size: 12px;
     }
-    
+
     .form input:-ms-input-placeholder {
         font-size: 12px;
     }
+
     .select {
         width: 100%;
         font-size: 12px;
         box-sizing: border-box;
     }
+
     #meeting-time {
         font-size: 12px;
         height: 35px;
     }
+
     ::-webkit-calendar-picker-indicator {
         top: 6px;
         right: 15px;
@@ -1929,9 +2177,11 @@ html, body {
         background-repeat: no-repeat;
         background-image: url('/assets/images/calendar.svg');
     }
+
     .disactive::before {
         top: 8px;
     }
+
     .form .form__submit {
         font-size: 15px;
         height: 35px;
@@ -1939,53 +2189,66 @@ html, body {
         max-width: 228px;
         width: 100%;
     }
+
     .questions__btn {
         font-size: 10px;
         max-width: 100%;
     }
+
     .step4__box {
         max-width: 275px;
     }
+
     .step4__box::after {
         right: -44px;
         width: 45px;
         height: 45px;
         top: 10px;
     }
+
     .step4 .step__bot {
         max-width: 95px;
     }
+
     .step .step3__box {
         margin-bottom: 25px;
     }
+
     .question__item {
         font-size: 12px;
         padding: 10px;
         margin-bottom: 10px;
     }
+
     .step .step__text-box {
         margin-bottom: 60px;
     }
+
     .men__img-box {
         margin: 15px auto 0;
     }
+
     ::-webkit-calendar-picker-indicator {
         width: 15px;
         height: 15px;
     }
+
     .back-btn {
         width: 35px;
         height: 35px;
     }
+
     .back-btn__img {
         width: 14px;
     }
+
     .step2 .back-btn {
         bottom: 65px;
         left: 0;
         right: 0;
         margin: auto;
     }
+
     .section__box {
         position: relative;
     }
@@ -1995,27 +2258,34 @@ html, body {
     .container {
         max-width: 95%;
     }
+
     #step2__women .step2__box .step2__text-box {
         max-width: 71%;
         min-width: 71%;
     }
+
     ::-webkit-calendar-picker-indicator {
         display: none;
     }
+
     .step1 .section__box {
         flex-direction: column;
         align-items: center;
     }
+
     .step {
         padding-top: 15px;
     }
+
     .step1 .step__bot {
         max-width: 154px;
         margin-bottom: 10px;
     }
+
     .step1__box::before {
         background-image: none;
     }
+
     .step1 .step__content {
         max-width: 100%;
         width: 100%;
@@ -2025,21 +2295,26 @@ html, body {
         padding: 20px 25px;
         margin-bottom: 25px;
     }
+
     .step1__btn {
         font-size: 20px;
     }
+
     .step1__btn-box {
         margin-bottom: 20px;
     }
+
     .miss {
         margin-bottom: 12px;
     }
+
     .step2 .step__text-box, #typing2 {
         min-width: 77%;
         max-width: 77%;
         min-height: auto;
         height: auto;
     }
+
     .men__img {
         width: 295px;
     }
@@ -2049,70 +2324,72 @@ html, body {
             top: 68px;
             left: 47px;
         }
-    
+
         #pain__taz_w {
             top: 128px;
             left: 48px;
         }
-    
+
         #pain__golova_w {
             left: 153px;
             top: 27px;
         }
-    
+
         #pain__plech_w {
             left: 130px;
             top: 65px;
         }
-    
+
         #pain__kist_w {
             left: 187px;
             top: 146px;
         }
+
         #pain__rodi_w {
             left: 153px;
             top: 132px;
         }
-    
+
         #pain__visok_w {
             left: 249px;
-            top: 29px;        
+            top: 29px;
         }
-    
+
         #pain__chelust_w {
             left: 258px;
             top: 45px;
         }
-    
+
         #pain__sheya_w {
             left: 241px;
             top: 48px;
         }
-    
+
         #pain__poyas_w {
             left: 237px;
-            top: 113px;       
+            top: 113px;
         }
-    
+
         #pain__bruh_w {
             left: 262px;
             top: 111px;
         }
+
         #pain__mens_w {
             left: 260px;
             top: 128px;
         }
-    
+
         #pain__kopch_w {
             left: 233px;
             top: 144px;
         }
-    
+
         #pain__koleno_w {
             left: 251px;
             top: 194px;
         }
-    
+
         #pain__stup_w {
             bottom: 25px;
             left: 245px;
@@ -2125,84 +2402,104 @@ html, body {
             top: 59px;
             left: 44px;
         }
+
         #pain__taz {
             top: 121px;
             left: 44px;
         }
-        
+
         #pain__golova {
             top: 2px;
             left: 158px;
         }
+
         #pain__plech {
             left: 134px;
-            top: 48px;       
+            top: 48px;
         }
+
         #pain__kist {
             left: 197px;
             top: 139px;
         }
+
         #pain__visok {
             left: 261px;
             top: 4px;
         }
+
         #pain__chelust {
             left: 273px;
             top: 21px;
         }
+
         #pain__sheya {
             left: 254px;
             top: 23px;
         }
+
         #pain__poyas {
             left: 251px;
-            top: 97px;                
+            top: 97px;
         }
+
         #pain__bruh {
             left: 275px;
             top: 108px;
         }
+
         #pain__kopch {
             left: 245px;
             top: 127px;
         }
+
         #pain__koleno {
             left: 264px;
             top: 188px;
         }
+
         #pain__stup {
             bottom: 12px;
             left: 258px;
         }
     }
+
     .step2__box.active {
         margin-bottom: 40px;
     }
+
     .miss_diagnos {
         text-transform: uppercase;
         max-width: 90%;
     }
+
     #step3 .step__bot, .step3__box::before {
         display: none;
     }
+
     #step3 {
         padding: 0;
         padding-top: 15px;
     }
+
     #step3 .step__content {
         max-width: 100%;
         min-width: 100%;
     }
+
     .step3__box {
         height: 325px;
     }
+
     #typing4 {
         font-size: 12px;
         height: 290px;
     }
+
     .select {
         margin-bottom: 16px;
     }
+
     .form .form__submit {
         margin-bottom: 22px;
     }
@@ -2211,20 +2508,25 @@ html, body {
         width: 15px;
         height: 15px;
     }
+
     .questions__btn {
         height: 35px;
     }
+
     .step4 .section__box {
         padding: 15px 0 0 0;
     }
+
     .step4__box {
         max-width: 72%;
     }
+
     .disactive::before {
         text-align: center;
         left: 0;
         right: 0;
     }
+
     .step4 .back-btn {
         bottom: 110px;
         left: 0;
@@ -2237,6 +2539,7 @@ html, body {
         margin-bottom: 25px;
         height: fit-content;
     }
+
     .step4 .step__bot {
         max-width: 70px;
     }
@@ -2244,10 +2547,12 @@ html, body {
     .step4 iframe {
         height: 220px;
     }
+
     .quest__where-text {
         font-size: 12px;
         line-height: 15px;
     }
+
     .step2 .back-btn {
         bottom: 0;
         left: 0;
@@ -2255,6 +2560,7 @@ html, body {
         margin: auto;
         top: 335px;
     }
+
     #step2__women .back-btn {
         bottom: -40px;
         left: 0;
@@ -2262,12 +2568,14 @@ html, body {
         margin: auto;
         top: auto;
     }
+
     .step3 .back-btn {
         bottom: calc(10px + 25vh);
         left: auto;
         right: 10px;
         margin: auto;
     }
+
     .minimal {
         height: fit-content !important;
         min-height: fit-content !important;
@@ -2279,10 +2587,12 @@ html, body {
         min-width: 72%;
         max-width: 72%;
     }
+
     .miss_diagnos {
         max-width: 100%;
         font-size: 10px;
     }
+
     .step4__box::after {
         right: -35px;
         width: 35px;
@@ -2290,6 +2600,3 @@ html, body {
         top: 13px;
     }
 }
-
-
-
